@@ -12,8 +12,6 @@ import streamlit as st
 import os
 from PIL import Image
 import numpy as np
-import gdown
-
 
 
 # In[2]:
