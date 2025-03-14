@@ -54,6 +54,8 @@ class Generator(nn.Module):
 
 # In[3]:
 
+url = "https://drive.google.com/file/d/1dmhil4_5f2iFVj6iAT9s8g9PiejQ7WGb/view?usp=sharing"
+gdown.download(url, "generator.pth", quiet=False)
 
 # Initialize device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -63,8 +65,7 @@ z_dim = 100
 G = Generator(z_dim).to(device)
 G.load_state_dict(torch.load("generator.pth", map_location=device))
 G.eval()
-url = "https://drive.google.com/file/d/1dmhil4_5f2iFVj6iAT9s8g9PiejQ7WGb/view?usp=sharing"
-gdown.download(url, "generator.pth", quiet=False)
+
 
 # In[4]:
 
