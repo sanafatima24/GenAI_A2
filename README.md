@@ -9,4 +9,5 @@ app_file: app.py
 pinned: false
 ---
 
-# GenAI_A2
+# Image_Does_Not_Exist_Generator
+Web App Link: https://huggingface.co/spaces/SanaFatima2409/Image_Does_Not_Exist_App
